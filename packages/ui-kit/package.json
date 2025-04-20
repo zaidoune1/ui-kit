@@ -11,8 +11,8 @@
 	"module": "./dist/ui-kit.es.js",
 	"exports": {
 		".": {
-			"import": "./dist/atomic-ui.es.js",
-			"require": "./dist/atomic-ui.cjs.js",
+			"import": "./dist/ui-kit.es.js",
+			"require": "./dist/ui-kit.cjs.js",
 			"types": "./dist/index.d.ts"
 		},
 		"./style.css": "./dist/style.css"
