@@ -216,6 +216,8 @@ export default [
 			'jsx-a11y/no-noninteractive-element-interactions': 'off',
 			'@typescript-eslint/no-unused-vars': 'warn',
 			'@typescript-eslint/object-curly-spacing': ['warn', 'always'],
+
+			ignore: ['vite-plugin-dts'],
 		},
 	},
 	prettier,
