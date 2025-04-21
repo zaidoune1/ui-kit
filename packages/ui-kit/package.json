@@ -7,13 +7,12 @@
 		"dist"
 	],
 	"main": "./dist/ui-kit.cjs.js",
-	"typings": "./dist/index.d.ts",
 	"module": "./dist/ui-kit.es.js",
+	"types": "./dist/index.d.ts",
 	"exports": {
 		".": {
 			"import": "./dist/ui-kit.es.js",
-			"require": "./dist/ui-kit.cjs.js",
-			"types": "./dist/index.d.ts"
+			"require": "./dist/ui-kit.cjs.js"
 		},
 		"./style.css": "./dist/style.css"
 	},
@@ -28,9 +27,15 @@
 		"dev": "vite",
 		"build": "tsc -b && vite build",
 		"lint": "eslint .",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build"
 	},
 	"dependencies": {
+		"@emotion/react": "^11.14.0",
+		"@emotion/styled": "^11.14.0",
+		"@mui/material": "^7.0.2",
+		"@mui/x-data-grid": "^8.0.0",
 		"react": "^19.1.0",
 		"react-dom": "^19.1.0"
 	},
